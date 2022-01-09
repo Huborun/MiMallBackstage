@@ -19,6 +19,10 @@ router.get('/smartwear', function (req, res) {
     Search.getSearch(req.query, "adsmartwear", connection, res);
 })
 
+router.get('/smarthome', function (req, res) {
+    Search.getSearch(req.query, "adsmarthome", connection, res);
+})
+
 router.get('/recommend', function (req, res) {
     Search.getSearch(req.query, "recommend", connection, res);
 })
@@ -45,6 +49,14 @@ router.get('/household', function (req, res) {
 
 router.get('/kitchen', function (req, res) {
     Search.getSearch(req.query, "adkitchen", connection, res);
+})
+
+router.get('/sports', function (req, res) {
+    Search.getSearch(req.query, "adsports", connection, res);
+})
+
+router.get('/daily', function (req, res) {
+    Search.getSearch(req.query, "addaily", connection, res);
 })
 
 router.get('/top', function (req, res) {

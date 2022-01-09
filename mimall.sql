@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 80019
 File Encoding         : 65001
 
-Date: 2022-01-08 15:52:33
+Date: 2022-01-09 16:49:32
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -21,7 +21,7 @@ SET FOREIGN_KEY_CHECKS=0;
 DROP TABLE IF EXISTS `addaily`;
 CREATE TABLE `addaily` (
   `id` int NOT NULL,
-  `firstrow` int NOT NULL,
+  `firstrow` int NOT NULL DEFAULT '0',
   `showid` int NOT NULL DEFAULT '0',
   `src` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
@@ -36,6 +36,38 @@ CREATE TABLE `addaily` (
 -- ----------------------------
 -- Records of addaily
 -- ----------------------------
+INSERT INTO `addaily` VALUES ('1', '1', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c5769bd53177a9301113f799fdc8511d.jpg?thumb=1&w=234&h=300&f=webp&q=90', null, null, null, null, null, '0');
+INSERT INTO `addaily` VALUES ('2', '1', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/65950f83f429f2a05125bea297d8df6b.jpg?thumb=1&w=234&h=300&f=webp&q=90', null, null, null, null, null, '0');
+INSERT INTO `addaily` VALUES ('3', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e2ad7080408a1434b90f824f50293b89.jpg?thumb=1&w=200&h=200&f=webp&q=90', '米家声波电动牙刷T700', '个护健康', '米家声波电动牙刷T700', '399', null, '0');
+INSERT INTO `addaily` VALUES ('4', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b5566da4f82e730c21bc8d85b3819f7b.jpg?thumb=1&w=200&h=200&f=webp&q=90', '米家电动剃须刀S500', '个护健康', '浮动贴面更干净，减压设计更舒适', '169', '199', '0');
+INSERT INTO `addaily` VALUES ('5', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/4cd18c61d5786df7dfb4a8927d83da66.jpg?thumb=1&w=200&h=200&f=webp&q=90', '米家理发器', '个护健康', '米家理发器', '119', '149', '0');
+INSERT INTO `addaily` VALUES ('6', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cccefe4c39329ec01b587d114f64eab5.jpg?thumb=1&w=200&h=200&f=webp&q=90', '米家自动洗手机套装', '个护健康', '伸手出泡，抑菌有效', '79', null, '0');
+INSERT INTO `addaily` VALUES ('7', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7676cd481892743762484613df962606.jpg?thumb=1&w=200&h=200&f=webp&q=90', '米家电动冲牙器', '个护健康', '动力强劲，全方位清洁口腔', '199', null, '0');
+INSERT INTO `addaily` VALUES ('8', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a2e6100cb09462515a939caf8bbe56ab.jpg?thumb=1&w=200&h=200&f=webp&q=90', '米家声波电动牙刷T500\r\n', '个护健康', '刷的干净、智能护齿', '179', null, '0');
+INSERT INTO `addaily` VALUES ('9', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/161335ac42176491d4e98986c6b9de68.jpg?thumb=1&w=200&h=200&f=webp&q=90', '米家电子体温计', '个护健康', '快速知体温，精准更智能', '99', null, '0');
+INSERT INTO `addaily` VALUES ('10', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5afc0b5d19db30a62ed15b5435008033.jpg?thumb=1&w=100&h=100&f=webp&q=90', '米家自动香氛机套装', '个护健康', null, '99', null, '1');
+INSERT INTO `addaily` VALUES ('11', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e2ad7080408a1434b90f824f50293b89.jpg?thumb=1&w=200&h=200&f=webp&q=90', '米家声波电动牙刷T700', '电源/线材', '米家声波电动牙刷T700', '399', null, '0');
+INSERT INTO `addaily` VALUES ('12', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b5566da4f82e730c21bc8d85b3819f7b.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米无线充电宝 10000mAh 10W\r\n', '电源/线材', '能量满满，无线有线都能充', '129', null, '0');
+INSERT INTO `addaily` VALUES ('13', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/bb115b0d5e6cc24c39c1ae818b63bf1a.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米立式无线充电器 通用快充20W\r\n', '电源/线材', '横竖可充，迅速感应边充边玩', '99', null, '0');
+INSERT INTO `addaily` VALUES ('14', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e2589bc96718b0db697b23ff765c01c3.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米无线充电宝30W 10000mAh', '电源/线材', '小米无线充电宝30W 10000mAh', '199', null, '0');
+INSERT INTO `addaily` VALUES ('15', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a45463351a35af1407381a173b3c9ef9.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米无线车充', '电源/线材', '电动变形，自动锁紧充电', '169', null, '0');
+INSERT INTO `addaily` VALUES ('16', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fffc0a962387dff2f70aeb009ddf69ff.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米车载充电器快充版1A1C 100W', '电源/线材', '小米车载充电器快充版1A1C 100W', '99', null, '0');
+INSERT INTO `addaily` VALUES ('17', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2562c4a892f018a979ff0cd8b992251f.jpg?thumb=1&w=200&h=200&f=webp&q=90', '米兔儿童电话手表5C', '儿童用品', '视频通话，守护孩子“看得见”', '399', null, '0');
+INSERT INTO `addaily` VALUES ('18', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d5736a7ecdfa73fa30887d7bfc997541.jpg?thumb=1&w=200&h=200&f=webp&q=90', '米兔儿童学习手表4X', '儿童用品', '米兔儿童学习手表4X', '499', '599', '0');
+INSERT INTO `addaily` VALUES ('19', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/56b3f247dc3c9b244e85a37d1e95ab3f.jpg?thumb=1&w=200&h=200&f=webp&q=90', '米兔儿童学习手表4', '儿童用品', '8天超长待机，AI双摄高清视频通话', '899', null, '0');
+INSERT INTO `addaily` VALUES ('20', '0', '0', 'https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/8ccb5004d3f84ce49d56b65e93787180.jpg?thumb=1&w=200&h=200', '儿童滑板车', '儿童用品', '安全好玩的酷玩具', '219', null, '0');
+INSERT INTO `addaily` VALUES ('21', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c3c34d13383ecaf8929bddad14296460.jpg?thumb=1&w=200&h=200&f=webp&q=90', '木星黎明系列积木 智能积木 猎...', '儿童用品', '智能积木 猎户座六足泰坦', '459', '479', '0');
+INSERT INTO `addaily` VALUES ('22', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f87f86159484dc4a7e3ccd7f2021a5c3.jpg?thumb=1&w=200&h=200&f=webp&q=90', '木星黎明系列积木 静态积木 飞鱼座穿梭器\r\n', '儿童用品', '智能积木 飞鱼座穿梭器', '99', null, '0');
+INSERT INTO `addaily` VALUES ('23', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/42dcd770e850747e0789f02e8ac032d9.jpg?thumb=1&w=200&h=200&f=webp&q=90', '多彩指尖积木', '儿童用品', '打开幸运，翻出乐趣', '10', null, '0');
+INSERT INTO `addaily` VALUES ('24', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/af7991bef41050c4aa9beb76e193c21c.jpg?thumb=1&w=100&h=100&f=webp&q=90', '木星黎明系列积木 静态积木 天鹰座侦察机', '儿童用品', null, '179', null, '1');
+INSERT INTO `addaily` VALUES ('25', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1db0bdebf7a991abf8a307f289491a37.jpg?thumb=1&w=200&h=200&f=webp&q=90', '8H释压舒弹纤维枕 抗菌对装', '家居床品', '8H释压舒弹纤维枕 抗菌对装', '99', null, '0');
+INSERT INTO `addaily` VALUES ('26', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fac75c3cf00c16d9f682bf8b67aca3e4.jpg?thumb=1&w=200&h=200&f=webp&q=90', '米家天然乳胶护颈枕S', '家居床品', '大颗粒释压体验，升级好睡眠', '179', '189', '0');
+INSERT INTO `addaily` VALUES ('27', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f04cf76f17d1a45e8242cf96c1173613.jpg?thumb=1&w=200&h=200&f=webp&q=90', '米家天然乳胶护颈枕', '家居床品', '天然乳胶 三曲线护颈', '149', '159', '0');
+INSERT INTO `addaily` VALUES ('28', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ff21df849dd28d9afda3f53457fe2eb0.jpg?thumb=1&w=200&h=200&f=webp&q=90', '米家护颈记忆绵枕', '家居床品', '高低曲线承托，睡眠更自在', '79', null, '0');
+INSERT INTO `addaily` VALUES ('29', '0', '0', 'https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/4bee00fb66230d5d4512bb8d4b993d2d.jpg?thumb=1&w=200&h=200', '8H记忆绵护椎腰靠', '家居床品', '处处体贴，为你撑腰', '79', '89', '0');
+INSERT INTO `addaily` VALUES ('30', '0', '0', 'https://cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/3a139cf0-3d45-9c2e-9054-0a89c186f26b.jpg?thumb=1&w=200&h=200', '8H多功能青春床垫X1\r\n', '家居床品', '除螨，抑菌，更透气', '299', '399', '0');
+INSERT INTO `addaily` VALUES ('31', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f9017bebb14740ea46673aaa81a616cb.jpg?thumb=1&w=200&h=200&f=webp&q=90', '8H乳胶床垫2', '家居床品', '软硬双面可睡', '499', '559', '0');
+INSERT INTO `addaily` VALUES ('32', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/62ce711a4c595c78dee5e647f1295240.jpg?thumb=1&w=100&h=100&f=webp&q=90', '8H记忆绵多功能午睡枕', '家居床品', null, '69', null, '1');
 
 -- ----------------------------
 -- Table structure for adhousehold
@@ -452,6 +484,35 @@ CREATE TABLE `adsmarthome` (
 INSERT INTO `adsmarthome` VALUES ('1', '1', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ec383d223d9f38f442268df684c526f6.png?thumb=1&w=293&h=375&f=webp&q=90', null, null, null, null, null, '0');
 INSERT INTO `adsmarthome` VALUES ('2', '1', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a517d9aa182942ef01b5bcbc3eea744e.jpg?thumb=1&w=293&h=375&f=webp&q=90', null, null, null, null, null, '0');
 INSERT INTO `adsmarthome` VALUES ('3', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/adce4500b997efaf6e3ff8e8150215f4.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米小爱音箱Play 增强版', '小爱音箱', '是音箱也是床头时钟', '149', null, '0');
+INSERT INTO `adsmarthome` VALUES ('4', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/4d73fad85fb9f683109834a882ba15a6.jpg?thumb=1&w=200&h=200&f=webp&q=90', 'Xiaomi Sound', '小爱音箱', '小米高保真智能音箱', '499', null, '0');
+INSERT INTO `adsmarthome` VALUES ('5', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e7c6e79433c883e1a022ec21402c1679.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米小爱音箱 Play', '小爱音箱', '听音乐、语音遥控家电', '99', null, '0');
+INSERT INTO `adsmarthome` VALUES ('6', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8b619d27877bbc497468c673a317a847.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米小爱音箱 Pro', '小爱音箱', '语音遥控5000+品牌主流家电', '269', '299', '0');
+INSERT INTO `adsmarthome` VALUES ('7', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/86c3f61639ae6a2a9a205a463d338ed2.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米AI音箱（第二代）\r\n', '小爱音箱', '小米AI音箱（第二代）', '189', '199', '0');
+INSERT INTO `adsmarthome` VALUES ('8', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9946e252a7c49662376c056ced004a20.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米小爱触屏音箱', '小爱音箱', '好听，更好看', '249', null, '0');
+INSERT INTO `adsmarthome` VALUES ('9', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e13900c094ae4ac4eb53b35f2d0c95b0.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米小爱音箱', '小爱音箱', '全面升级 旗舰音质', '209', '249', '0');
+INSERT INTO `adsmarthome` VALUES ('10', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1ab7943ae5215e0faacb04f7270d9cfb.jpg?thumb=1&w=100&h=100&f=webp&q=90', '小米小爱音箱 Art 电池版', '小爱音箱', null, '299', null, '1');
+INSERT INTO `adsmarthome` VALUES ('11', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0518e14e0e66f546a76802ebc15953b0.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米智能门锁 1S', '门锁', '经典门锁再进一步，性价比首选', '1299', null, '0');
+INSERT INTO `adsmarthome` VALUES ('12', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/70d65eab5671b8bb901b00d8debf40b1.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米智能门锁 Pro', '门锁', '可视化远程对讲，方便又安全', '1599', null, '0');
+INSERT INTO `adsmarthome` VALUES ('13', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9f58cf48a1b92376b54e99f6124eb886.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米全自动智能门锁\r\n', '门锁', '高端全自动，一触即开门', '1799', null, '0');
+INSERT INTO `adsmarthome` VALUES ('14', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5c7cb198d71ee962b38a45aa03515341.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米全自动智能门锁 Pro', '门锁', '172°超大广角，多重安全防护', '2199', null, '0');
+INSERT INTO `adsmarthome` VALUES ('15', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f0914c60fa1ab807972541b4e2b1a4cd.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米智能门锁 E', '门锁', '告别钥匙，畅享便捷生活', '999', null, '0');
+INSERT INTO `adsmarthome` VALUES ('16', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d8db2ee381ce25dc2305829d6e151d32.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米人脸识别智能门锁 X\r\n', '门锁', '3D结构光人脸识别，刷脸秒开锁', '3299', null, '0');
+INSERT INTO `adsmarthome` VALUES ('17', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/314df4955a5f305de306155078bb103d.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米路由器AX3000', '路由器', '小米路由器AX3000', '349', null, '0');
+INSERT INTO `adsmarthome` VALUES ('18', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b11a222051f90dafb22b939cc5142e69.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米路由器4A千兆版', '路由器', '双核全千兆AC1200路由器', '129', null, '0');
+INSERT INTO `adsmarthome` VALUES ('19', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c2af30d499323618f9abdaffd82b581b.jpg?thumb=1&w=200&h=200&f=webp&q=90', 'Redmi路由器AX3000', '路由器', '疾速WiFi6，更快一步。', '259', null, '0');
+INSERT INTO `adsmarthome` VALUES ('20', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/33b734b0f427fd89ae293752ffaf4381.jpg?thumb=1&w=200&h=200&f=webp&q=90', 'Redmi路由器AX1800', '路由器', '双频WiFi6', '229', null, '0');
+INSERT INTO `adsmarthome` VALUES ('21', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/500a840ec69f9ce885345e9a9471a9f9.png?thumb=1&w=200&h=200&f=webp&q=90', 'Redmi路由器AX6S', '路由器', 'Redmi路由器AX6S', '329', null, '0');
+INSERT INTO `adsmarthome` VALUES ('22', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/07419ed5047471b60d0232c9d8a7d84f.png?thumb=1&w=200&h=200&f=webp&q=90', '小米路由器4C', '路由器', '300M单频', '69', null, '0');
+INSERT INTO `adsmarthome` VALUES ('23', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3c9787588ce1ae5876334a1b9296ad3f.jpg?thumb=1&w=200&h=200&f=webp&q=90', 'Redmi路由器AC2100', '路由器', '全民升级2000兆', '199', null, '0');
+INSERT INTO `adsmarthome` VALUES ('24', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/11db80e3fcb3e186e5ea7078b0a1de5a.jpg?thumb=1&w=100&h=100&f=webp&q=90', '小米路由器AX6000', '路由器', null, '599', null, '1');
+INSERT INTO `adsmarthome` VALUES ('25', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/74f5975a77c6d9fcf67e294c47561994.jpg?thumb=1&w=200&h=200&f=webp&q=90', '米家空调伴侣2', '智能设备', '传统空调轻松智能化', '79', null, '0');
+INSERT INTO `adsmarthome` VALUES ('26', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/65c6018d393e8d860f638a394d3826bf.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米智能多模网关\r\n', '智能设备', '智能家庭控制中心', '169', null, '0');
+INSERT INTO `adsmarthome` VALUES ('27', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/068940a89c1c35a9924cb64c762879fe.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米米家智能开关\r\n', '智能设备', '不同款式，多种选择', '55', '59', '0');
+INSERT INTO `adsmarthome` VALUES ('28', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/564855bb23318db932d11a64b8053917.jpg?thumb=1&w=200&h=200&f=webp&q=90', '米家智能插座2 蓝牙网关版', '智能设备', '智能定时|用电统计|过载保护', '49', null, '0');
+INSERT INTO `adsmarthome` VALUES ('29', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/bd2c99ad0113f0cb8420f06d99e0c989.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米米家屏显开关（三开单控）', '智能设备', '小米米家屏显开关（三开单控）', '139', '149', '0');
+INSERT INTO `adsmarthome` VALUES ('30', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7fe0a1143670e2b37e4beb91c8b0d717.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米门窗传感器2', '智能设备', '开合记录', '45', '49', '0');
+INSERT INTO `adsmarthome` VALUES ('31', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/08142700e816eee56a84dd8b87e86b55.jpg?thumb=1&w=200&h=200&f=webp&q=90', '人体传感器2', '智能设备', '感应人体移动，新增光照亮暗判断', '55', '59', '0');
+INSERT INTO `adsmarthome` VALUES ('32', '0', '0', 'https://cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/804c0c0f-c8af-78a1-c2fd-c845d104242a.jpg?thumb=1&w=100&h=100', '小米无线开关', '智能设备', null, '39', null, '1');
 
 -- ----------------------------
 -- Table structure for adsmartwear
@@ -550,7 +611,7 @@ INSERT INTO `adsontop` VALUES ('37', 'Xiaomi手机', null, 'Xiaomi 11 Pro', 'htt
 DROP TABLE IF EXISTS `adsports`;
 CREATE TABLE `adsports` (
   `id` int NOT NULL,
-  `firstrow` int NOT NULL,
+  `firstrow` int NOT NULL DEFAULT '0',
   `showid` int NOT NULL DEFAULT '0',
   `src` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
@@ -565,6 +626,38 @@ CREATE TABLE `adsports` (
 -- ----------------------------
 -- Records of adsports
 -- ----------------------------
+INSERT INTO `adsports` VALUES ('1', '1', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/84fef78042e4056ea589474196780d4e.jpg?thumb=1&w=234&h=300&f=webp&q=90', null, null, null, null, null, '0');
+INSERT INTO `adsports` VALUES ('2', '1', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecce1c0d981037e58cfa281a06122249.jpg?thumb=1&w=234&h=300&f=webp&q=90', null, null, null, null, null, '0');
+INSERT INTO `adsports` VALUES ('3', '0', '0', 'https://cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/T1r_x_BgLT1RXrhCrK.jpg?thumb=1&w=200&h=200', '九号平衡车', '平衡车/滑板车', '年轻人的酷玩具', '2199', null, '0');
+INSERT INTO `adsports` VALUES ('4', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/223f9f2c0f9765851adff89e43db65f0.jpg?thumb=1&w=200&h=200&f=webp&q=90', '九号平衡车燃动版', '平衡车/滑板车', '燃动升级，随走随停', '2599', null, '0');
+INSERT INTO `adsports` VALUES ('5', '0', '0', 'https://cdn.cnbj0.fds.api.mi-img.com/b2c-miapp-a1/877d3ce8-68ab-7506-2a78-55a8c0fba946.png?thumb=1&w=200&h=200', '九号平衡车 Plus\r\n', '平衡车/滑板车', '一个形影不离的新伙伴', '3499', null, '0');
+INSERT INTO `adsports` VALUES ('6', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3622a82de99a8a3ee1aeb2b2b7586209.jpg?thumb=1&w=200&h=200&f=webp&q=90', '米家电动滑板车1S', '平衡车/滑板车', '型出格，行出色', '2199', null, '0');
+INSERT INTO `adsports` VALUES ('7', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aabf1a475043266cf4759ec58d0f679c.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米米家电动滑板车Pro\r\n', '平衡车/滑板车', '性能提升，动力更强劲', '3099', null, '0');
+INSERT INTO `adsports` VALUES ('8', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/609d0a457c7f8ac27d76f953c8acb7fc.jpg?thumb=1&w=200&h=200&f=webp&q=90', '九号卡丁车Pro兰博基尼汽车定制版', '平衡车/滑板车', '九号卡丁车Pro兰博基尼汽车定制版', '9999', null, '0');
+INSERT INTO `adsports` VALUES ('9', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fcc87477432d45a0e13a544cd5d7b2f5.jpg?thumb=1&w=200&h=200&f=webp&q=90', '九号平衡车 改装套件（不含平衡...', '平衡车/滑板车', '小朋友的大玩具，老顽童的小赛车', '2799', '2999', '0');
+INSERT INTO `adsports` VALUES ('10', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/550177d2e54387521bce9e78cb2949dd.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米体脂秤2', '运动健身', '轻松掌握身体脂肪率', '99', null, '0');
+INSERT INTO `adsports` VALUES ('11', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/91340c5a32e0c9bf9e14cb0df09e2718.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米体重秤2\r\n', '运动健身', '起重低至100G   一杯水都能测', '59', null, '0');
+INSERT INTO `adsports` VALUES ('12', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a44765d365daa289e7d3d71dd935a381.jpg?thumb=1&w=200&h=200&f=webp&q=90', '米家走步机', '运动健身', '不足半平米 走出好身材', '1599', '1799', '0');
+INSERT INTO `adsports` VALUES ('13', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/59e41e403312311dea21a9ebb1491292.jpg?thumb=1&w=200&h=200&f=webp&q=90', '米家跑步机', '运动健身', '心率控速、全屋互联', '2299', '2499', '0');
+INSERT INTO `adsports` VALUES ('14', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d4b436a6f6adb2afd0bc59ceb45f7344.jpg?thumb=1&w=200&h=200&f=webp&q=90', '米家mini筋膜枪', '运动健身', '动力深入肌群，横扫疲劳酸痛', '349', '299', '0');
+INSERT INTO `adsports` VALUES ('15', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d8982fbbf8948ff75200ad1021d1f90b.jpg?thumb=1&w=200&h=200&f=webp&q=90', '米家运动心电T恤', '运动健身', '米家运动心电T恤', '229', '249', '0');
+INSERT INTO `adsports` VALUES ('16', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b441057910c50e8807c5da90f65ba300.jpg?thumb=1&w=200&h=200&f=webp&q=90', '米家筋膜枪', '运动健身', '米家筋膜枪', '459', '499', '0');
+INSERT INTO `adsports` VALUES ('17', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a0ca95bc1de606c2d6a3a44cd28b3490.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米旅行箱 20英寸', '箱包配饰', '一款坚固的旅行箱伴您左右', '249', '299', '0');
+INSERT INTO `adsports` VALUES ('18', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/dadb65ac061e64c96d264185abebf4d9.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米旅行箱 24英寸', '箱包配饰', '一款坚固的旅行箱伴您左右', '349', '399', '0');
+INSERT INTO `adsports` VALUES ('19', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/dadb65ac061e64c96d264185abebf4d9.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米金属旅行箱 2', '箱包配饰', '精湛工艺，体面出行', '899', '999', '0');
+INSERT INTO `adsports` VALUES ('20', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5b4304d0e62a9c874e83eba0649110ee.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米旅行箱 青春款 系列', '箱包配饰', '环保材料，轻便重量', '179', '199', '0');
+INSERT INTO `adsports` VALUES ('21', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/39dddad286a7593cbd910a1acb4fc3a3.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米轻商务旅行箱 20英寸 ', '箱包配饰', '取物，从未如此简单', '349', '399', '0');
+INSERT INTO `adsports` VALUES ('22', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3658081e32c66ef22565cddb1d1771b8.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米极简都市双肩包 2', '箱包配饰', '简约挺括，彰显年轻活力', '129', '149', '0');
+INSERT INTO `adsports` VALUES ('23', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/20c38c4d85252bfd05f3509fa8c168ef.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米经典商务双肩包 2 ', '箱包配饰', '实用商务时尚范 经典设计 空间利用率高', '79', '99', '0');
+INSERT INTO `adsports` VALUES ('24', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/18ed368638a1d75431e36be0bf6d04f4.jpg?thumb=1&w=100&h=100&f=webp&q=90', '小米小背包', '箱包配饰', null, '29', null, '1');
+INSERT INTO `adsports` VALUES ('25', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3fe46e9ba1bf939713b0c3c55bf6776b.jpg?thumb=1&w=200&h=200&f=webp&q=90', '米家充气宝1S', '出行工具', '米家充气宝1S', '199', null, '0');
+INSERT INTO `adsports` VALUES ('26', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/27477a6b721dbff5758c295f68da318e.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米后视镜记录仪', '出行工具', '简单语音控制 从此解放双手', '499', null, '0');
+INSERT INTO `adsports` VALUES ('27', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d459d12b84471a08f44f0dfb27d59337.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米记录仪2 标准版', '出行工具', '1080P高清，车载记录仪', '359', '379', '0');
+INSERT INTO `adsports` VALUES ('28', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1d659e276cb0fe3ae92046db02e00637.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米记录仪2 2K版', '出行工具', '超清画质', '479', null, '0');
+INSERT INTO `adsports` VALUES ('29', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d86c1eb8f5525bc4c76c8e0e98db7446.jpg?thumb=1&w=200&h=200&f=webp&q=90', '小米对讲机2', '出行工具', '向更远出发', '449', null, '0');
+INSERT INTO `adsports` VALUES ('30', '0', '0', 'https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/05c5b22c8ae030b6c5de7d36114a32e4.jpg?thumb=1&w=200&h=200', '小米对讲机1S', '出行工具', '再次出发，陪你轻聊一路', '249', null, '0');
+INSERT INTO `adsports` VALUES ('31', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8c27c25b38dc7c000dd26d23739f951d.jpg?thumb=1&w=200&h=200&f=webp&q=90', '米家智能激光测距仪', '出行工具', '一键测量，操作一目了然', '199', null, '0');
+INSERT INTO `adsports` VALUES ('32', '0', '0', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/155d7ee69679d173a034576737577342.jpg?thumb=1&w=100&h=100&f=webp&q=90', '米家电动精修螺丝刀\r\n', '出行工具', null, '169', null, '1');
 
 -- ----------------------------
 -- Table structure for adwide
@@ -575,7 +668,7 @@ CREATE TABLE `adwide` (
   `src` varchar(255) NOT NULL,
   `showid` int NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- ----------------------------
 -- Records of adwide
@@ -583,6 +676,7 @@ CREATE TABLE `adwide` (
 INSERT INTO `adwide` VALUES ('1', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f334fbd05d5681bb838fefd1c815d88c.jpg?thumb=1&w=1533&h=150&f=webp&q=90', '3');
 INSERT INTO `adwide` VALUES ('2', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2a1ce31f3b1a0d6b36616c8400b2a5d2.jpg?thumb=1&w=1226&h=120&f=webp&q=90', '0');
 INSERT INTO `adwide` VALUES ('3', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88e35cffc82cd98cd53172460067af17.jpg?thumb=1&w=1533&h=150&f=webp&q=90', '0');
+INSERT INTO `adwide` VALUES ('4', 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88e35cffc82cd98cd53172460067af17.jpg?thumb=1&w=1226&h=120&f=webp&q=90', '0');
 
 -- ----------------------------
 -- Table structure for area
@@ -923,16 +1017,17 @@ CREATE TABLE `usercart` (
   `amount` int DEFAULT '1',
   `chosen` int DEFAULT '0',
   PRIMARY KEY (`cartid`)
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- ----------------------------
 -- Records of usercart
 -- ----------------------------
-INSERT INTO `usercart` VALUES ('3', '4', 'Xiaomi 11 Ultra', '12GB+512GB', '陶瓷黑', '6499.00', '1', '0');
-INSERT INTO `usercart` VALUES ('12', '4', 'Redmi K40', '8GB+256GB', '幻境', '2099.00', '1', '0');
-INSERT INTO `usercart` VALUES ('15', '4', 'Redmi K40', '12GB+256GB', '墨羽', '2299.00', '6', '0');
-INSERT INTO `usercart` VALUES ('23', '4', 'Redmi K40', '8GB+128GB', '晴雪', '1999.00', '1', '0');
-INSERT INTO `usercart` VALUES ('24', '4', 'Redmi K40', '12GB+256GB', '亮黑', '2299.00', '6', '0');
+INSERT INTO `usercart` VALUES ('26', '4', 'Redmi Note 11 Pro', '8GB+256GB', '迷雾森林', '2099.00', '1', '1');
+INSERT INTO `usercart` VALUES ('27', '4', 'Redmi Note 11 Pro', '6GB+128GB', '浅梦星河', '1699.00', '2', '1');
+INSERT INTO `usercart` VALUES ('28', '4', 'Xiaomi MIX FOLD', '12GB+256GB', '黑色', '6999.00', '1', '1');
+INSERT INTO `usercart` VALUES ('29', '4', 'Redmi K40', '6GB+128GB', '亮黑', '2299.00', '1', '1');
+INSERT INTO `usercart` VALUES ('30', '4', 'Xiaomi 11 Ultra', '12GB+256GB', '陶瓷黑', '5999.00', '1', '1');
+INSERT INTO `usercart` VALUES ('31', '4', 'Xiaomi MIX 4', '8GB+128GB', '陶瓷黑', '4199.00', '1', '1');
 
 -- ----------------------------
 -- Table structure for userorder
@@ -952,7 +1047,7 @@ CREATE TABLE `userorder` (
   `pay` int NOT NULL DEFAULT '0',
   `time` datetime DEFAULT NULL,
   PRIMARY KEY (`id`,`userid`,`orderid`)
-) ENGINE=InnoDB AUTO_INCREMENT=98 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- ----------------------------
 -- Records of userorder
@@ -1023,3 +1118,5 @@ INSERT INTO `userorder` VALUES ('94', '4', '100016', '胡博润', '1', 'Xiaomi M
 INSERT INTO `userorder` VALUES ('95', '4', '100016', '胡博润', '1', 'Xiaomi MIX 4', '8GB+128GB', '陶瓷黑', '5', '4199.00', '0', '2022-01-07 17:56:24');
 INSERT INTO `userorder` VALUES ('96', '4', '100016', '胡博润', '1', 'Xiaomi MIX 4', '8GB+256GB', '影青灰', '1', '4469.00', '0', '2022-01-07 17:56:24');
 INSERT INTO `userorder` VALUES ('97', '4', '100016', '胡博润', '1', 'Xiaomi MIX FOLD', '12GB+256GB', '黑色', '5', '6999.00', '0', '2022-01-07 17:56:24');
+INSERT INTO `userorder` VALUES ('98', '4', '100017', '胡博润', '1', 'Xiaomi 11 Ultra', '12GB+512GB', '陶瓷黑', '1', '6499.00', '0', '2022-01-09 12:16:03');
+INSERT INTO `userorder` VALUES ('99', '4', '100017', '胡博润', '1', 'Redmi K40', '12GB+256GB', '亮黑', '7', '2299.00', '0', '2022-01-09 12:16:03');
